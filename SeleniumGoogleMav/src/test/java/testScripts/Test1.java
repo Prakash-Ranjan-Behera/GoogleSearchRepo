@@ -12,6 +12,7 @@ public class Test1 extends BaseTest {
 	{
 		String eTitle = "Google";
 		String aTitle = driver.getTitle();
+		System.out.println(aTitle);
 		Assert.assertEquals(aTitle, eTitle);
 		
 		
