@@ -26,9 +26,10 @@ WebDriverWait wait;
 			wait.until(ExpectedConditions.visibilityOf(fbPO.clickFBLink(0)));
 			fbPO.clickFBLink(0).click();
 			Thread.sleep(3000);
-			String eTitle = "Facebook – log in or sign up";
+			String eTitle = "Facebook â€“ log in or sign up";
 			fbPO.checkTitle(eTitle);
 			String aTitle = driver.getTitle();
+			System.out.println(aTitle);
 			Assert.assertEquals(eTitle, aTitle);
 			
 			
